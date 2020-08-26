@@ -47,6 +47,8 @@
             this.Mijntext.Name = "Mijntext";
             this.Mijntext.Size = new System.Drawing.Size(100, 20);
             this.Mijntext.TabIndex = 1;
+            this.Mijntext.Text = "gdg";
+            this.Mijntext.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Mijntext_KeyDown);
             // 
             // but1oefening1
             // 

@@ -19,13 +19,31 @@ namespace oefening1
 
         private void but1oefening1_Click(object sender, EventArgs e)
         {
-            listoefening1.Items.Add(Mijntext.Text);
-            Mijntext.Text = "";
+            if (Mijntext.Text != "")
+            {
+                listoefening1.Items.Add(Mijntext.Text);
+                Mijntext.Focus();
+            }
+
+            if (listoefening1.Items.Count>=5)
+            {
+                but1oefening1.Enabled = false;
+                Mijntext.Enabled = false;
+                Mijntext.Focus();
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            Mijntext.Focus();
+        }
 
+        private void Mijntext_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                but1oefening1_Click(sender, e);
+            }
         }
     }
 }

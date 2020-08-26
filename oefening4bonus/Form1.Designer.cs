@@ -1,4 +1,4 @@
-﻿namespace oefening4
+﻿namespace oefening4bonus
 {
     partial class Form1
     {
@@ -28,53 +28,55 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cboefening4 = new System.Windows.Forms.ComboBox();
-            this.butoefening4 = new System.Windows.Forms.Button();
+            this.cb1 = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.tb1 = new System.Windows.Forms.TextBox();
             this.tb2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // cboefening4
+            // cb1
             // 
-            this.cboefening4.FormattingEnabled = true;
-            this.cboefening4.Location = new System.Drawing.Point(93, 69);
-            this.cboefening4.Name = "cboefening4";
-            this.cboefening4.Size = new System.Drawing.Size(121, 21);
-            this.cboefening4.TabIndex = 0;
-            this.cboefening4.SelectedIndexChanged += new System.EventHandler(this.cboefening4_SelectedIndexChanged);
+            this.cb1.FormattingEnabled = true;
+            this.cb1.Location = new System.Drawing.Point(129, 108);
+            this.cb1.Name = "cb1";
+            this.cb1.Size = new System.Drawing.Size(121, 21);
+            this.cb1.TabIndex = 0;
+            this.cb1.SelectedIndexChanged += new System.EventHandler(this.cb1_SelectedIndexChanged);
             // 
-            // butoefening4
+            // button1
             // 
-            this.butoefening4.Location = new System.Drawing.Point(84, 132);
-            this.butoefening4.Name = "butoefening4";
-            this.butoefening4.Size = new System.Drawing.Size(75, 23);
-            this.butoefening4.TabIndex = 1;
-            this.butoefening4.Text = "click";
-            this.butoefening4.UseVisualStyleBackColor = true;
-            this.butoefening4.Click += new System.EventHandler(this.butoefening4_Click);
+            this.button1.Location = new System.Drawing.Point(219, 218);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "click";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // tb1
             // 
-            this.tb1.Location = new System.Drawing.Point(62, 176);
+            this.tb1.Location = new System.Drawing.Point(139, 289);
             this.tb1.Name = "tb1";
             this.tb1.Size = new System.Drawing.Size(100, 20);
             this.tb1.TabIndex = 2;
             // 
             // tb2
             // 
-            this.tb2.Location = new System.Drawing.Point(62, 216);
+            this.tb2.Location = new System.Drawing.Point(376, 289);
             this.tb2.Name = "tb2";
             this.tb2.Size = new System.Drawing.Size(100, 20);
             this.tb2.TabIndex = 3;
             // 
             // Form1
             // 
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tb2);
             this.Controls.Add(this.tb1);
-            this.Controls.Add(this.butoefening4);
-            this.Controls.Add(this.cboefening4);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.cb1);
             this.Name = "Form1";
+            this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -83,8 +85,8 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox cboefening4;
-        private System.Windows.Forms.Button butoefening4;
+        private System.Windows.Forms.ComboBox cb1;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox tb1;
         private System.Windows.Forms.TextBox tb2;
     }

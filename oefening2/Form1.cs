@@ -34,8 +34,24 @@ namespace oefening2
 
         private void butoefening2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(cboefening2.SelectedItem.ToString());
-            cboefening2 .Items.RemoveAt(cboefening2.SelectedIndex);
+            //MessageBox.Show(cboefening2.SelectedItem.ToString());
+            //cboefening2 .Items.RemoveAt(cboefening2.SelectedIndex);
+            if (cboefening2.Items.Count <= 0)
+            {
+                MessageBox.Show("geen items meer om te deleten.");
+            }
+            else if (cboefening2.SelectedIndex < 0)
+            {
+                MessageBox.Show("Error geen item geselecteerd. Selecteer een item A.U.B.");
+            }
+            //if (cb1.SelectedIndex >= 0)
+            else
+            {
+                MessageBox.Show($"{cboefening2.SelectedItem.ToString()} is verwijderd");
+                cboefening2.Items.RemoveAt(cboefening2.SelectedIndex);
+            }
+            
+            
         }
     }
 }
